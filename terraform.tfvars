@@ -11,3 +11,9 @@ web_subnet_cidr_block = ["10.0.2.0/24", "10.0.4.0/24"]
 
 # CIDR blocks for database subnets in the VPC
 database_subnet_cidr_block = ["10.0.6.0/24", "10.0.8.0/24"]
+
+# Names for the Elastic IPs
+elastic_ip_names = ["ElasticIP1", "ElasticIP2"]
+
+# Names for the NAT gateways
+nat_gateway_names = ["NatGateway1", "NatGateway2"]

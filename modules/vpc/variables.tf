@@ -42,3 +42,9 @@ variable "database_subnet_names" {
   description = "List of names for the database subnets."
   default     = ["DatabaseSubnet1", "DatabaseSubnet2"]
 }
+
+# Variable for storing the list of NAT Gateway IDs
+variable "nat_gateway_ids" {
+  description = "List of NAT Gateway IDs"
+  type        = list(string)
+}

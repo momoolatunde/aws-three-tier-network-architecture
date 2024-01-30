@@ -21,3 +21,15 @@ variable "database_subnet_cidr_block" {
   type        = list(string)
   description = "The CIDR block for the database subnets."
 }
+
+# Variable for specifying the names of the Elastic IPs
+variable "elastic_ip_names" {
+  type        = list(string)
+  description = "Names for the Elastic IPs"
+}
+
+# Variable for specifying the names of the NAT Gateways
+variable "nat_gateway_names" {
+  type        = list(string)
+  description = "Names for the Nat Gateways"
+}

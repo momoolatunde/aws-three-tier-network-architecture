@@ -77,7 +77,15 @@ jobs:
       - name: Delayed Destroy
         uses: jakejarvis/wait-action@master
         with:
-          time: '20m'
+          time: '10m'
 
       - name: Terraform Destroy
         run: terraform destroy -auto-approve
+
+      - name: Terraform Init
+        run: terraform init
+        working-directory: ./pre
+
+      - name: Terraform Destroy
+        run: terraform destroy -auto-approve
+        working-directory: ./pre
